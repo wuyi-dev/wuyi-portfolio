@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈的第一个网页</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .my-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+            margin: 20px auto;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .skill {
+            background: #3498db;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px;
+        }
+        button {
+            background: #2ecc71;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 这里放你的照片 -->
+   
+        <div style="width:150px; height:150px; background:#3498db; border-radius:50%; margin:20px auto; color:white; line-height:150px; font-size:24px;">
+            吴
+
+
+
+<!-- 添加项目展示部分 -->
+<h2>我的项目</h2>
+<div class="projects">
+    <div class="project-card">
+        <h3>个人简历网站</h3>
+        <p>使用纯HTML/CSS/JavaScript创建的响应式网站，包含个人介绍、技能展示和联系方式。</p>
+        <p><strong>技术栈：</strong> HTML5, CSS3, JavaScript</p>
+        <p><strong>状态：</strong> 已完成 ✅</p>
+    </div>
+    <div class="project-card">
+        <h3>待办事项应用（进行中）</h3>
+        <p>基于Vue.js的任务管理应用，支持添加、删除、标记完成功能。</p>
+        <p><strong>技术栈：</strong> Vue.js, LocalStorage</p>
+        <p><strong>状态：</strong> 开发中 🚧</p>
+    </div>
+</div>
+
+<!-- 添加GitHub链接 -->
+<div style="margin: 30px 0;">
+    <a href="https://github.com/你的用户名" target="_blank" 
+       style="background: #24292e; color: white; padding: 12px 25px; 
+              text-decoration: none; border-radius: 6px; display: inline-block;">
+       🌟 查看我的GitHub
+    </a>
+</div>
+
+
+
+
+
+
+        </div>
+        
+        <h1>你好，我是哈哈</h1>
+        <p>宿州学院 · 计算机科学与技术专业 · 2026届</p>
+        <p>我正在学习前端开发，这是我的第一个网页！</p>
+        
+        <h2>正在学习的技能</h2>
+        <div>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Vue.js</span>
+        </div>
+        
+        <h2>当前目标</h2>
+        <p>1. 完成个人作品集网站</p>
+        <p>2. 学习前端开发基础</p>
+        <p>3. 找到前端实习机会</p>
+        
+        <button onclick="showMessage()">点击这里测试JavaScript</button>
+        <p id="message" style="margin-top:15px; color:#e74c3c;"></p>
+        
+        <div style="margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+            <p>📧 邮箱：963369451@qq.com</p>
+            <p>📱 电话：157-5554-7278</p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerHTML = 
+                '🎉 JavaScript运行成功！这是我的第一个交互效果。时间：' + new Date().toLocaleTimeString();
+        }
+    </script>
+</body>
+</html>
